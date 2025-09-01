@@ -552,6 +552,10 @@
       {
         "netclass": "12V",
         "pattern": "/M1A"
+      },
+      {
+        "netclass": "3V",
+        "pattern": "+3.3V1"
       }
     ]
   },

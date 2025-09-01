@@ -1,0 +1,159 @@
+
+(rules PCB freerouting.dsn
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 4.1)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 4.1)
+    )
+    (layer_rule In2.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 4.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.1)
+    )
+  )
+  (rule
+    (width 254.0)
+    (clearance 254.0)
+    (clearance 127.0 (type smd_to_turn_gap))
+    (clearance 63.6 (type smd))
+    (clearance 254.0 (type "kicad_default"))
+    (clearance 254.0 (type 3V,Default))
+    (clearance 254.0 (type 12V,Default))
+    (clearance 254.0 (type 5V,Default))
+  )
+  (padstack "Via[0-3]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_600:300_um" "Via[0-3]_600:300_um" default
+  )
+  (via 
+    "Via[0-3]_600:300_um-kicad_default" "Via[0-3]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_600:300_um-3V,Default" "Via[0-3]_600:300_um" 3V,Default
+  )
+  (via 
+    "Via[0-3]_600:300_um-12V,Default" "Via[0-3]_600:300_um" 12V,Default
+  )
+  (via 
+    "Via[0-3]_600:300_um-5V,Default" "Via[0-3]_600:300_um" 5V,Default
+  )
+  (via_rule
+    default "Via[0-3]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_600:300_um-kicad_default"
+  )
+  (via_rule
+    3V,Default "Via[0-3]_600:300_um-3V,Default"
+  )
+  (via_rule
+    12V,Default "Via[0-3]_600:300_um-12V,Default"
+  )
+  (via_rule
+    5V,Default "Via[0-3]_600:300_um-5V,Default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "unconnected-(U1-D+-Pad57)" "unconnected-(U1-LED-Pad61)" "unconnected-(U1-32_OUT1B-Pad24)" "unconnected-(U1-T--Pad62)" "unconnected-(U1-VUSB-Pad49)" "unconnected-(U1-5V-Pad55)" "unconnected-(U1-31_CTX3-Pad23)"
+    "unconnected-(U1-41_A17-Pad33)" "unconnected-(U1-GND-Pad59)" "unconnected-(U1-GND-Pad52)" "unconnected-(U1-PROGRAM-Pad53)" "unconnected-(U1-D--Pad56)" "unconnected-(U1-R--Pad65)" "unconnected-(U1-D+-Pad67)" "unconnected-(U1-40_A16-Pad32)"
+    "unconnected-(U1-13_SCK_LED-Pad35)" "unconnected-(U1-R+-Pad60)" "unconnected-(U1-33_MCLK2-Pad25)" "unconnected-(U1-37_CS-Pad29)" "unconnected-(U1-3V3-Pad51)" "unconnected-(U1-ON_OFF-Pad54)" "unconnected-(U1-30_CRX3-Pad22)" "unconnected-(U1-VBAT-Pad50)"
+    "unconnected-(U1-36_CS-Pad28)" "unconnected-(U1-T+-Pad63)" "unconnected-(U1-GND-Pad64)" "unconnected-(U1-D--Pad66)" "unconnected-(U1-GND-Pad58)" "unconnected-(U2-VRP-Pad4)" "unconnected-(U2-EN-Pad6)" "unconnected-(U2-PG-Pad5)"
+    "unconnected-(U3-VREFA-Pad12)" "unconnected-(U3-VCC-Pad3)" "unconnected-(U3-LO2-Pad11)" "unconnected-(U3-VM-Pad1)" "unconnected-(U3-GND-Pad2)" "unconnected-(U3-VREFB-Pad13)" "unconnected-(U3-LO1-Pad10)" "unconnected-(U4-GND-Pad11)"
+    "unconnected-(U4-ON-Pad5)" "unconnected-(U4-GND-Pad6)" "unconnected-(U4-VIN-Pad2)" "unconnected-(U4-SW-Pad12)" /QTRX5 /QTRX9 /QTRX15 /QTRX3
+    /QTRX7 /QTRX1 /QTRX13 /QTRXODD /QTRX11 /QTRX14 /QTRX6 /QTRXEVN
+    /QTRX10 /QTRX2 /QTRX12 /QTRX4 /QTRX8 "/ESP8266 RX8" "/ESP8266 TX8" /M2INA
+    /M1INB "/ENCODER1_A" /M2INB /M2PWM /M1PWM "/ENCODER2_B" "unconnected-(U1-29_TX7_D29-Pad21)" "unconnected-(U1-39_MISO1_OUT1A_A15-Pad31)"
+    "unconnected-(U1-12_MISO_MQSL_D12-Pad14)" /M1INA "/ENCODER2_A" "/ENCODER1_B" "unconnected-(U1-28_RX7_D28-Pad20)" "unconnected-(U4-VIN-Pad1)" "unconnected-(U2-VRP-Pad4)_1" "unconnected-(U4-GND-Pad4)"
+    "unconnected-(U4-GND-Pad3)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 3V,Default
+    +3.3V +3.3V1
+    (clearance_class 3V,Default)
+    (via_rule 3V,Default)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 12V,Default
+    +12V /M2A /M1A /M1B /M2B
+    (clearance_class 12V,Default)
+    (via_rule 12V,Default)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 5V,Default
+    +5V
+    (clearance_class 5V,Default)
+    (via_rule 5V,Default)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

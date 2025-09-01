@@ -1,4 +1,4 @@
-25236944616228985
+25245720704600850
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -69502,6 +69502,20 @@ threaded screw
 0
 4
 1
+MyLibrary
+HEATSINKUSV
+
+
+0
+0
+0
+MyLibrary
+MSG12ANG03
+
+
+0
+3
+3
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -87884,6 +87898,27 @@ Voltage Regulator
 0
 12
 6
+Pololu
+Pololu Ball Castor
+Pololu Ball Castor
+Pololu Ball Castor
+0
+0
+0
+Pololu
+Pololu Extended Motor Bracket
+
+Pololu Extended Motor Bracket
+0
+0
+0
+Pololu
+QTRX-HD-15A
+
+Pololu QTRX-HD-15A
+0
+19
+19
 Pololu
 TB67H420FTG Dual Motor Driver Carrier
 
