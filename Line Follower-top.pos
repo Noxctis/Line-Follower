@@ -1,0 +1,27 @@
+### Footprint positions - created on 2026-02-06T11:16:15+0800 ###
+### Printed by KiCad version 9.0.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                                                          Package                                                           PosX       PosY       Rot  Side
+C1        0.1uF                                                        C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                    92.0000   -82.0000   90.0000  top
+C2        0.1uF                                                        C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   132.9900  -122.9875   90.0000  top
+C3        0.1uF                                                        C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   137.0000  -123.0000   90.0000  top
+C4        0.1uF                                                        C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   141.0000  -122.9625   90.0000  top
+C5        22uF                                                         C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   145.0000  -122.9625   90.0000  top
+C6        470uF                                                        CP_Radial_D8.0mm_P3.50mm                                      172.0000  -119.0000  -90.0000  top
+C7        0.1uF                                                        C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   111.0000   -56.0375   90.0000  top
+C8        0.1uF                                                        C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   115.0000   -56.0375   90.0000  top
+C9        0.1uF                                                        C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   119.0000   -56.0375   90.0000  top
+C10       22uF                                                         C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                   123.0000   -56.0375   90.0000  top
+H5        ~                                                            Pololu_Extended_Motor_Bracket                                 202.6900   -56.0000  180.0000  top
+H6        ~                                                            Pololu_Extended_Motor_Bracket                                 202.6900  -128.0000    0.0000  top
+J4        Conn_01x06                                                   PinSocket_1x06_P2.54mm_Vertical                               162.2500  -103.1700    0.0000  top
+J5        Conn_01x06                                                   PinSocket_1x06_P2.54mm_Vertical                               162.0000   -63.6750    0.0000  top
+M         Pololu_Ball_Castor                                           Pololu_Ball_Castor                                            100.0000   -92.0000   90.0000  top
+U1        Teensy4.1                                                    Teensy41                                                      119.0000   -91.7100   90.0000  top
+U2        D42V55F5_5V_Voltage_Regulator                                D42V55F5                                                      131.5700   -86.0200    0.0000  top
+U3        ESP32-C3_SUPERMINI_TH                                        MODULE_ESP32-C3_SUPERMINI_TH                                   99.3800   -68.0000    0.0000  top
+U4        Big_MOSFET_Slide_Switch_with_Reverse_Voltage_Protection,_MP  Big_MOSFET_Slide_Switch_with_Reverse_Voltage_Protection,_MP   217.4300  -102.1600   90.0000  top
+U5        QTRX-HD-15A                                                  QTRX-HD-15A                                                    89.3425  -122.4800   90.0000  top
+U6        TB6612FNG_BreakoutBoard                                      MODULE_ROB-14450                                              144.0000  -105.0000  180.0000  top
+## End

@@ -4,7 +4,7 @@
     fortyfive_degree
   )
   (autoroute_settings
-    (fanout on)
+    (fanout off)
     (autoroute on)
     (postroute on)
     (vias on)
@@ -16,23 +16,23 @@
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 4.1)
+      (against_preferred_direction_trace_costs 4.3)
     )
     (layer_rule In1.Cu
       (active off)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 4.1)
+      (against_preferred_direction_trace_costs 4.3)
     )
     (layer_rule In2.Cu
       (active off)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 4.1)
+      (against_preferred_direction_trace_costs 4.3)
     )
     (layer_rule B.Cu
       (active on)
-      (preferred_direction horizontal)
+      (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
       (against_preferred_direction_trace_costs 3.1)
     )
@@ -106,14 +106,17 @@
     GND "unconnected-(U1-D+-Pad57)" "unconnected-(U1-LED-Pad61)" "unconnected-(U1-32_OUT1B-Pad24)" "unconnected-(U1-T--Pad62)" "unconnected-(U1-VUSB-Pad49)" "unconnected-(U1-5V-Pad55)" "unconnected-(U1-31_CTX3-Pad23)"
     "unconnected-(U1-41_A17-Pad33)" "unconnected-(U1-GND-Pad59)" "unconnected-(U1-GND-Pad52)" "unconnected-(U1-PROGRAM-Pad53)" "unconnected-(U1-D--Pad56)" "unconnected-(U1-R--Pad65)" "unconnected-(U1-D+-Pad67)" "unconnected-(U1-40_A16-Pad32)"
     "unconnected-(U1-13_SCK_LED-Pad35)" "unconnected-(U1-R+-Pad60)" "unconnected-(U1-33_MCLK2-Pad25)" "unconnected-(U1-37_CS-Pad29)" "unconnected-(U1-3V3-Pad51)" "unconnected-(U1-ON_OFF-Pad54)" "unconnected-(U1-30_CRX3-Pad22)" "unconnected-(U1-VBAT-Pad50)"
-    "unconnected-(U1-36_CS-Pad28)" "unconnected-(U1-T+-Pad63)" "unconnected-(U1-GND-Pad64)" "unconnected-(U1-D--Pad66)" "unconnected-(U1-GND-Pad58)" "unconnected-(U2-VRP-Pad4)" "unconnected-(U2-EN-Pad6)" "unconnected-(U2-PG-Pad5)"
-    "unconnected-(U3-VREFA-Pad12)" "unconnected-(U3-VCC-Pad3)" "unconnected-(U3-LO2-Pad11)" "unconnected-(U3-VM-Pad1)" "unconnected-(U3-GND-Pad2)" "unconnected-(U3-VREFB-Pad13)" "unconnected-(U3-LO1-Pad10)" "unconnected-(U4-GND-Pad11)"
+    "unconnected-(U1-36_CS-Pad28)" "unconnected-(U1-T+-Pad63)" "unconnected-(U1-GND-Pad64)" "unconnected-(U1-D--Pad66)" "unconnected-(U1-GND-Pad58)" "unconnected-(U2-EN-Pad6)" "unconnected-(U2-PG-Pad5)" "unconnected-(U4-GND-Pad11)"
     "unconnected-(U4-ON-Pad5)" "unconnected-(U4-GND-Pad6)" "unconnected-(U4-VIN-Pad2)" "unconnected-(U4-SW-Pad12)" /QTRX5 /QTRX9 /QTRX15 /QTRX3
     /QTRX7 /QTRX1 /QTRX13 /QTRXODD /QTRX11 /QTRX14 /QTRX6 /QTRXEVN
-    /QTRX10 /QTRX2 /QTRX12 /QTRX4 /QTRX8 "/ESP8266 RX8" "/ESP8266 TX8" /M2INA
-    /M1INB "/ENCODER1_A" /M2INB /M2PWM /M1PWM "/ENCODER2_B" "unconnected-(U1-29_TX7_D29-Pad21)" "unconnected-(U1-39_MISO1_OUT1A_A15-Pad31)"
-    "unconnected-(U1-12_MISO_MQSL_D12-Pad14)" /M1INA "/ENCODER2_A" "/ENCODER1_B" "unconnected-(U1-28_RX7_D28-Pad20)" "unconnected-(U4-VIN-Pad1)" "unconnected-(U2-VRP-Pad4)_1" "unconnected-(U4-GND-Pad4)"
-    "unconnected-(U4-GND-Pad3)"
+    /QTRX10 /QTRX2 /QTRX12 /QTRX4 /QTRX8 /M2INA /M1INB "/ENCODER1_A"
+    /M2INB /M2PWM /M1PWM "/ENCODER2_B" "unconnected-(U1-29_TX7_D29-Pad21)" "unconnected-(U1-39_MISO1_OUT1A_A15-Pad31)" "unconnected-(U1-12_MISO_MQSL_D12-Pad14)" /M1INA
+    "/ENCODER2_A" "/ENCODER1_B" "unconnected-(U1-28_RX7_D28-Pad20)" "unconnected-(U4-VIN-Pad1)" "unconnected-(U2-VRP-Pad4)_1" "unconnected-(U4-GND-Pad4)" "unconnected-(U4-GND-Pad3)" "unconnected-(H1-Pad1)"
+    "unconnected-(H1-Pad1)_1" "unconnected-(H1-Pad1)_2" "unconnected-(H1-Pad1)_3" "unconnected-(H1-Pad1)_4" "unconnected-(H1-Pad1)_5" "unconnected-(H1-Pad1)_6" "unconnected-(H1-Pad1)_7" "unconnected-(H1-Pad1)_8"
+    "unconnected-(H2-Pad1)" "unconnected-(H2-Pad1)_1" "unconnected-(H2-Pad1)_2" "unconnected-(H2-Pad1)_3" "unconnected-(H2-Pad1)_4" "unconnected-(H2-Pad1)_5" "unconnected-(H2-Pad1)_6" "unconnected-(H2-Pad1)_7"
+    "unconnected-(H2-Pad1)_8" "unconnected-(U2-VRP-Pad4)" "unconnected-(U4-GND-Pad10)" "unconnected-(U4-VOUT-Pad8)" "/ESP32 RX8" "/ESP32 TX8" "unconnected-(U3-GPIO0-Pad0)" "unconnected-(U3-GPIO1-Pad1)"
+    "unconnected-(U3-GPIO4-Pad4)" "unconnected-(U3-GPIO6-Pad6)" "unconnected-(U3-GPIO7-Pad7)" "unconnected-(U3-GPIO3-Pad3)" "unconnected-(U3-GPIO10-Pad10)" "unconnected-(U3-GPIO5-Pad5)" "unconnected-(U3-3V3-Pad3.3)" "unconnected-(U3-GPIO8-Pad8)"
+    "unconnected-(U3-GPIO2-Pad2)" "unconnected-(U3-GPIO9-Pad9)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
